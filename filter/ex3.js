@@ -24,7 +24,18 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  let namesStarks = names.filter(name => name.split(' ')[1] === 'Stark');
+  return namesStarks;
 }
+
+keepStarks([
+  'Bran Stark',
+  'Cersei Lannister',
+  'Sandor Clegane',
+  'Arya Stark',
+  'Yara Greyjoy',
+  'Sansa Stark'
+])
 
 // Ne pas modifier l'export
 module.exports = keepStarks;

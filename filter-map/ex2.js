@@ -25,6 +25,8 @@ Sortie attendue:
 */
 
 function getCampusesTeachingReact(campuses) {
+  let arrayFiltered = campuses.filter(camp => camp.curriculums.includes('JS/React')).map(camp => camp.city);
+  return arrayFiltered;
 }
 
 module.exports = getCampusesTeachingReact;
